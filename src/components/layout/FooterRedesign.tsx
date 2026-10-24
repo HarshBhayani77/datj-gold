@@ -41,7 +41,7 @@ export default function FooterRedesign() {
 
           <div className="lg:pl-12">
             <p className="mb-6 max-w-md text-sm leading-relaxed text-white/75 font-light">
-              Receive private bullion rate intelligence, new 22K gold & 925 sterling silver launches, and private salon viewing invitations.
+              Receive private bullion rate intelligence, new 22K gold & 925 sterling silver launches, and private atelier viewing invitations.
             </p>
             <form onSubmit={(e) => { e.preventDefault(); alert('Thank you for joining the Datj Circle.'); }} className="flex border-b border-white/25 pb-3">
               <label htmlFor="footer-email" className="sr-only">Email address</label>
@@ -162,7 +162,7 @@ export default function FooterRedesign() {
               </div>
               <div className="flex items-start gap-2.5">
                 <MapPin className="mt-0.5 h-4 w-4 text-[#8ebfa8] shrink-0" />
-                <span>Surat Diamond Bourse (SDB) Salon, DREAM City, Surat 395007</span>
+                <span>Surat Diamond Bourse (SDB) Atelier, DREAM City, Surat 395007</span>
               </div>
             </div>
           </div>

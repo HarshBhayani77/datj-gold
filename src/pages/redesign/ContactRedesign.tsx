@@ -101,7 +101,7 @@ export default function ContactRedesign() {
                         className="form-field text-xs cursor-pointer font-medium"
                       >
                         <option>Surat Flagship Atelier (Ghod Dod Road)</option>
-                        <option>Surat Diamond Bourse Salon (Khajod)</option>
+                        <option>Surat Diamond Bourse Atelier (Khajod)</option>
                         <option>Private Video Call (Zoom / WhatsApp HD)</option>
                       </select>
                     </div>
@@ -208,7 +208,7 @@ export default function ContactRedesign() {
                     <MapPin className="w-4 h-4" />
                   </div>
                   <div>
-                    <p className="font-bold">Surat Diamond Bourse Salon</p>
+                    <p className="font-bold">Surat Diamond Bourse Atelier</p>
                     <p className="text-[#526a61]">DREAM City, Khajod, Surat, Gujarat 395007</p>
                   </div>
                 </div>

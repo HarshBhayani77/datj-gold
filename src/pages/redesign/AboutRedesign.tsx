@@ -220,10 +220,10 @@ export default function AboutRedesign() {
             <div className="rounded-3xl bg-white p-8 border border-[#144a37]/15 shadow-sm space-y-4">
               <div className="flex items-center gap-2 text-[10.5px] font-semibold uppercase tracking-[0.2em] text-[#144a37]">
                 <span className="w-1.5 h-1.5 bg-[#144a37] rotate-45 shrink-0" />
-                <span>Diamond & Silver Salon</span>
+                <span>Diamond & Silver Atelier</span>
               </div>
               <h3 className="font-serif text-3xl font-bold text-[#0d211a]">
-                Surat Diamond Bourse Salon
+                Surat Diamond Bourse Atelier
               </h3>
               <p className="text-xs text-[#526a61] leading-relaxed">
                 Tower 4, Surat Diamond Bourse (SDB), DREAM City, Khajod, Surat, Gujarat 395007
