@@ -10,9 +10,10 @@ export default function AboutRedesign() {
       <section className="relative overflow-hidden bg-[#062319] text-white py-24 px-5 md:px-10 lg:py-32 border-b border-white/10">
         <div className="mx-auto max-w-[1500px] grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-[10.5px] font-semibold uppercase tracking-[0.24em] text-[#8ebfa8] border border-white/15">
-              Heritage Since 1984 · Jaipur Atelier
-            </span>
+            <div className="flex items-center gap-2.5 text-[11px] font-medium uppercase tracking-[0.28em] text-[#8ebfa8]">
+              <span className="w-6 h-px bg-[#8ebfa8]/50" />
+              <span>Heritage Since 1984 · Jaipur Atelier</span>
+            </div>
             <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold leading-[0.92]">
               Honesty in metal,
               <span className="block italic text-[#8ebfa8] font-normal">purity in every grain.</span>
@@ -60,9 +61,10 @@ export default function AboutRedesign() {
             
             {/* 22K Gold */}
             <div className="rounded-3xl bg-white p-7 border border-[#144a37]/15 shadow-sm space-y-4">
-              <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-[#144a37] bg-[#eaf1ed] px-3 py-1 rounded-full">
-                BIS 916 Standard
-              </span>
+              <div className="flex items-center gap-2 text-[10px] font-mono font-semibold uppercase tracking-[0.18em] text-[#144a37]">
+                <span className="w-1.5 h-1.5 bg-[#144a37] rotate-45 shrink-0" />
+                <span>BIS 916 Standard</span>
+              </div>
               <h3 className="font-serif text-3xl font-bold text-[#0d211a]">
                 22KT Royal Gold
               </h3>
@@ -76,9 +78,10 @@ export default function AboutRedesign() {
 
             {/* 18K Gold */}
             <div className="rounded-3xl bg-white p-7 border border-[#144a37]/15 shadow-sm space-y-4">
-              <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-[#144a37] bg-[#eaf1ed] px-3 py-1 rounded-full">
-                BIS 750 Standard
-              </span>
+              <div className="flex items-center gap-2 text-[10px] font-mono font-semibold uppercase tracking-[0.18em] text-[#144a37]">
+                <span className="w-1.5 h-1.5 bg-[#144a37] rotate-45 shrink-0" />
+                <span>BIS 750 Standard</span>
+              </div>
               <h3 className="font-serif text-3xl font-bold text-[#0d211a]">
                 18KT Diamond Gold
               </h3>
@@ -92,9 +95,10 @@ export default function AboutRedesign() {
 
             {/* 925 Sterling Silver */}
             <div className="rounded-3xl bg-white p-7 border border-[#144a37]/15 shadow-sm space-y-4">
-              <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-[#144a37] bg-[#eaf1ed] px-3 py-1 rounded-full">
-                925 Assay Assayed
-              </span>
+              <div className="flex items-center gap-2 text-[10px] font-mono font-semibold uppercase tracking-[0.18em] text-[#144a37]">
+                <span className="w-1.5 h-1.5 bg-[#144a37] rotate-45 shrink-0" />
+                <span>925 Assay Assayed</span>
+              </div>
               <h3 className="font-serif text-3xl font-bold text-[#0d211a]">
                 925 Sterling Silver
               </h3>
@@ -108,9 +112,10 @@ export default function AboutRedesign() {
 
             {/* 999 Fine Silver */}
             <div className="rounded-3xl bg-white p-7 border border-[#144a37]/15 shadow-sm space-y-4">
-              <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-[#144a37] bg-[#eaf1ed] px-3 py-1 rounded-full">
-                999 Fine Bullion
-              </span>
+              <div className="flex items-center gap-2 text-[10px] font-mono font-semibold uppercase tracking-[0.18em] text-[#144a37]">
+                <span className="w-1.5 h-1.5 bg-[#144a37] rotate-45 shrink-0" />
+                <span>999 Fine Bullion</span>
+              </div>
               <h3 className="font-serif text-3xl font-bold text-[#0d211a]">
                 999 Pure Silver Bars
               </h3>
@@ -194,9 +199,10 @@ export default function AboutRedesign() {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="rounded-3xl bg-white p-8 border border-[#144a37]/15 shadow-sm space-y-4">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-[#144a37] bg-[#eaf1ed] px-3 py-1 rounded-full">
-                Flagship Atelier
-              </span>
+              <div className="flex items-center gap-2 text-[10.5px] font-semibold uppercase tracking-[0.2em] text-[#144a37]">
+                <span className="w-1.5 h-1.5 bg-[#144a37] rotate-45 shrink-0" />
+                <span>Flagship Atelier</span>
+              </div>
               <h3 className="font-serif text-3xl font-bold text-[#0d211a]">
                 Jaipur Heritage Salon
               </h3>
@@ -212,9 +218,10 @@ export default function AboutRedesign() {
             </div>
 
             <div className="rounded-3xl bg-white p-8 border border-[#144a37]/15 shadow-sm space-y-4">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-[#144a37] bg-[#eaf1ed] px-3 py-1 rounded-full">
-                Diamond & Silver Salon
-              </span>
+              <div className="flex items-center gap-2 text-[10.5px] font-semibold uppercase tracking-[0.2em] text-[#144a37]">
+                <span className="w-1.5 h-1.5 bg-[#144a37] rotate-45 shrink-0" />
+                <span>Diamond & Silver Salon</span>
+              </div>
               <h3 className="font-serif text-3xl font-bold text-[#0d211a]">
                 Mumbai Haute Atelier
               </h3>

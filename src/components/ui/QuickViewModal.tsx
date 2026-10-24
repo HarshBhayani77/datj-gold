@@ -51,7 +51,7 @@ export default function QuickViewModal() {
         {/* Close Button */}
         <button 
           onClick={closeQuickView} 
-          className="absolute right-4 top-4 z-20 p-2 text-[#0d211a] hover:text-[#144a37] transition-colors rounded-full bg-white/80 backdrop-blur border border-[#144a37]/10"
+          className="absolute right-4 top-4 z-20 p-2 text-[#0d211a] hover:text-[#144a37] transition-colors rounded-md bg-white/80 backdrop-blur border border-[#144a37]/10"
           aria-label="Close modal"
         >
           <X className="w-5 h-5" />
@@ -65,7 +65,7 @@ export default function QuickViewModal() {
              className="w-full h-full object-cover object-center max-h-[500px]"
            />
            <div className="absolute bottom-4 left-4 flex gap-2">
-              <span className="bg-[#0c3325] text-white text-[10px] uppercase tracking-widest font-semibold px-3 py-1.5 rounded-full shadow">
+              <span className="bg-[#0c3325] text-white text-[10px] uppercase tracking-widest font-semibold px-3 py-1.5 rounded-md shadow">
                 BIS Hallmarked
               </span>
            </div>
@@ -75,7 +75,7 @@ export default function QuickViewModal() {
         <div className="w-full md:w-1/2 p-6 md:p-10 flex flex-col bg-white overflow-y-auto custom-scrollbar">
            <div className="mb-6">
               <div className="flex items-center gap-2 mb-2">
-                  <span className="bg-[#144a37]/10 text-[#144a37] text-[10px] uppercase tracking-widest font-bold px-2.5 py-1 rounded-full">
+                  <span className="bg-[#144a37]/10 text-[#144a37] text-[10px] uppercase tracking-widest font-bold px-2.5 py-1 rounded-md">
                       {selectedProduct.category}
                   </span>
                   <span className="text-[#526a61] text-[10px] uppercase tracking-widest">In Stock · Ready to Dispatch</span>

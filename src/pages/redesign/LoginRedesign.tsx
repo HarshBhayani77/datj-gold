@@ -45,13 +45,13 @@ export default function LoginRedesign() {
               {/* Account Overview Card */}
               <div className="rounded-3xl bg-white p-8 border border-[#144a37]/15 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
                 <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 rounded-full bg-[#0c3325] text-white font-serif text-2xl font-bold flex items-center justify-center shadow-md">
+                  <div className="w-16 h-16 rounded-md bg-[#0c3325] text-white font-serif text-2xl font-bold flex items-center justify-center shadow-md">
                     {user.name.charAt(0).toUpperCase()}
                   </div>
                   <div>
                     <h2 className="font-serif text-2xl font-bold text-[#0d211a]">{user.name}</h2>
                     <p className="text-xs text-[#526a61] font-mono">{user.email}</p>
-                    <span className="inline-block mt-1 text-[10px] uppercase font-bold tracking-wider text-[#144a37] bg-[#eaf1ed] px-2.5 py-0.5 rounded-full">
+                    <span className="inline-block mt-1 text-[10px] uppercase font-bold tracking-wider text-[#144a37] bg-[#eaf1ed] px-2.5 py-0.5 rounded-md">
                       Verified Datj Patron
                     </span>
                   </div>
@@ -112,7 +112,7 @@ export default function LoginRedesign() {
                   </div>
                   <div className="text-right">
                     <p className="text-sm font-bold font-sans text-[#0d211a]">₹14,200</p>
-                    <span className="inline-block text-[10px] font-bold text-[#144a37] bg-[#eaf1ed] px-2.5 py-0.5 rounded-full">
+                    <span className="inline-block text-[10px] font-bold text-[#144a37] bg-[#eaf1ed] px-2.5 py-0.5 rounded-md">
                       Dispatched · Trackable
                     </span>
                   </div>

@@ -56,7 +56,7 @@ export default function AuthModal() {
                 className="w-full h-full object-cover"
               />
               {/* Overlay badge */}
-              <div className="absolute top-4 right-4 bg-[#BFA76A] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-lg">
+              <div className="absolute top-4 right-4 bg-[#BFA76A] text-white px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider shadow-lg">
                 Premium
               </div>
             </div>

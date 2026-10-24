@@ -21,20 +21,13 @@ export default function JewelleryCard({ product, dark = false }: { product: Jewe
           />
         </Link>
 
-        {/* Hallmark / Metal Badge */}
-        <div className="absolute left-3.5 top-3.5 flex flex-col gap-1">
-          {product.badge && (
-            <span className="inline-flex items-center gap-1 rounded-full bg-[#0c3325]/90 text-white px-2.5 py-1 text-[9px] font-semibold uppercase tracking-wider backdrop-blur shadow-sm">
-              <ShieldCheck className="w-2.5 h-2.5 text-[#8ebfa8]" />
-              {product.badge}
-            </span>
-          )}
-          {product.metalType === 'Silver' && (
-            <span className="rounded-full bg-white/95 text-[#0c3325] px-2.5 py-0.5 text-[9px] font-bold tracking-wider backdrop-blur shadow-sm">
-              925 Silver
-            </span>
-          )}
-        </div>
+        {/* Subtle Hallmark / Metal Corner Stamp */}
+        {(product.badge || product.metalType === 'Silver') && (
+          <div className="absolute left-3.5 top-3.5 flex items-center gap-1.5 bg-[#062319]/85 backdrop-blur-sm text-white px-2.5 py-1 text-[9.5px] font-mono tracking-wider rounded-md border border-white/15 shadow-sm">
+            <span className="w-1 h-1 bg-[#8ebfa8] rotate-45 shrink-0" />
+            <span>{product.badge || '925 Silver'}</span>
+          </div>
+        )}
 
         {/* Wishlist Button */}
         <button
@@ -62,7 +55,7 @@ export default function JewelleryCard({ product, dark = false }: { product: Jewe
         {/* Quick View Link */}
         <Link
           to={`/product/${product.id}`}
-          className="absolute bottom-3 left-3 right-3 flex translate-y-2 items-center justify-between rounded-full bg-[#062319]/95 px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-white opacity-0 backdrop-blur transition duration-300 group-hover:translate-y-0 group-hover:opacity-100 shadow-lg"
+          className="absolute bottom-3 left-3 right-3 flex translate-y-2 items-center justify-between rounded-xl bg-[#062319]/95 px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-white opacity-0 backdrop-blur transition duration-300 group-hover:translate-y-0 group-hover:opacity-100 shadow-lg"
         >
           <span>Examine Specifications</span>
           <ArrowUpRight className="h-3.5 w-3.5 text-[#8ebfa8]" />

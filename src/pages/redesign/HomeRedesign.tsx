@@ -74,9 +74,9 @@ export default function HomeRedesign() {
             {/* Left Column: Regal Copy & Actions (Below image on mobile, Left on desktop) */}
             <div className="order-2 lg:order-1 space-y-6 lg:space-y-7">
               
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[10.5px] font-semibold uppercase tracking-[0.24em] text-[#8ebfa8] backdrop-blur-md">
-                <ShieldCheck className="h-3.5 w-3.5" />
-                Est. 1984 · Jaipur Gold & Silver Atelier
+              <div className="flex items-center gap-2.5 text-[11px] font-medium uppercase tracking-[0.28em] text-[#8ebfa8]">
+                <span className="w-6 h-px bg-[#8ebfa8]/50" />
+                <span>Jaipur Gold & Silver Atelier · Est. 1984</span>
               </div>
 
               <h1 className="font-serif text-[clamp(2.7rem,6vw,6.5rem)] leading-[0.92] lg:leading-[0.88] tracking-[-0.03em] font-bold">
@@ -111,19 +111,13 @@ export default function HomeRedesign() {
                 </Link>
               </div>
 
-              {/* Live Reference Chips Directly in Hero */}
-              <div className="pt-4 border-t border-white/15 flex flex-wrap items-center gap-4 text-xs font-mono text-white/80">
-                <span className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-full border border-white/10">
-                  <span className="h-2 w-2 rounded-full bg-[#8ebfa8] animate-pulse" />
-                  22K Gold: <strong>₹{liveBullionRates.gold22k.toLocaleString('en-IN')}/g</strong>
-                </span>
-                <span className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-full border border-white/10">
-                  <span className="h-2 w-2 rounded-full bg-[#8ebfa8] animate-pulse" />
-                  925 Silver: <strong>₹{liveBullionRates.silver925.toLocaleString('en-IN')}/g</strong>
-                </span>
-                <span className="text-[11px] text-white/60 hidden sm:inline">
-                  (MCX Live Spot Benchmark)
-                </span>
+              {/* Live Bullion Benchmark in Hero - Quiet Editorial Data */}
+              <div className="pt-5 border-t border-white/15 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-white/90 font-light">
+                <span className="text-[10.5px] uppercase tracking-[0.22em] text-[#8ebfa8] font-medium">Daily Benchmark:</span>
+                <span>22K Gold <strong className="font-semibold text-white font-mono ml-1">₹{liveBullionRates.gold22k.toLocaleString('en-IN')}/g</strong></span>
+                <span className="text-white/20 hidden sm:inline">·</span>
+                <span>925 Silver <strong className="font-semibold text-white font-mono ml-1">₹{liveBullionRates.silver925.toLocaleString('en-IN')}/g</strong></span>
+                <span className="text-[10px] text-white/50 hidden md:inline font-mono">(MCX Spot)</span>
               </div>
 
             </div>
@@ -138,24 +132,11 @@ export default function HomeRedesign() {
                   fetchPriority="high"
                 />
                 
-                {/* Floating Trust Badge 1: Top Left */}
-                <div className="absolute top-3 left-3 sm:top-5 sm:left-5 rounded-xl sm:rounded-2xl bg-[#062319]/90 border border-white/20 p-2 sm:p-3.5 backdrop-blur-md shadow-lg text-white space-y-0.5 max-w-[170px] sm:max-w-[210px]">
-                  <div className="flex items-center gap-1 sm:gap-1.5 text-[#8ebfa8] font-bold text-[9px] sm:text-[10px] uppercase tracking-wider">
-                    <ShieldCheck className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
-                    <span>BIS 916 Certified</span>
-                  </div>
-                  <p className="text-[10px] sm:text-[11px] font-mono text-white/90">Laser HUID Inscribed</p>
-                  <p className="text-[9px] sm:text-[10px] text-white/60 hidden sm:block">Verifiable on BIS Care App</p>
-                </div>
-
-                {/* Floating Trust Badge 2: Bottom Right */}
-                <div className="absolute bottom-3 right-3 sm:bottom-5 sm:right-5 rounded-xl sm:rounded-2xl bg-[#062319]/90 border border-white/20 p-2 sm:p-3.5 backdrop-blur-md shadow-lg text-white space-y-0.5 text-right max-w-[170px] sm:max-w-[210px]">
-                  <div className="flex items-center justify-end gap-1 sm:gap-1.5 text-[#8ebfa8] font-bold text-[9px] sm:text-[10px] uppercase tracking-wider">
-                    <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
-                    <span>Pure Bullion</span>
-                  </div>
-                  <p className="text-[10px] sm:text-[11px] font-mono text-white/90">100% Lifetime Buyback</p>
-                  <p className="text-[9px] sm:text-[10px] text-white/60 hidden sm:block">At prevailing live market rates</p>
+                {/* Subtle Hallmark & Assurance Caption */}
+                <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 flex items-center justify-between text-[11px] font-mono text-white bg-[#062319]/85 backdrop-blur-md px-4 py-2.5 rounded-xl border border-white/15 shadow-xl">
+                  <span className="font-semibold text-[#8ebfa8]">BIS 916 HUID Laser Verified</span>
+                  <span className="text-white/30">|</span>
+                  <span className="text-white/90 font-medium">100% Lifetime Buyback</span>
                 </div>
               </div>
             </div>
@@ -168,7 +149,7 @@ export default function HomeRedesign() {
       <section className="border-b border-[#144a37]/15 bg-[#eaf1ed] px-5 py-4 md:px-10">
         <div className="mx-auto flex max-w-[1500px] flex-wrap items-center justify-between gap-y-3 gap-x-6 text-xs text-[#0c3325]">
           <div className="flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-[#144a37] animate-pulse" />
+            <span className="w-1.5 h-1.5 bg-[#144a37] rotate-45 shrink-0" />
             <span className="font-bold uppercase tracking-wider text-[11px]">Today's Live Bullion Reference (MCX):</span>
           </div>
 
@@ -219,14 +200,14 @@ export default function HomeRedesign() {
                     className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                     loading="lazy"
                   />
-                  <span className="absolute bottom-3 left-3 right-3 text-[10px] text-white uppercase tracking-widest font-mono font-bold bg-[#062319]/90 border border-white/20 py-1 rounded-full backdrop-blur-sm shadow-md">
-                    {item.count}
-                  </span>
-                </div>
+                  </div>
                 <div className="mt-3.5">
                   <h3 className="font-serif text-lg font-semibold text-[#0d211a] group-hover:text-[#144a37] transition-colors">
                     {item.label}
                   </h3>
+                  <p className="text-[11px] text-[#526a61] uppercase tracking-[0.16em] mt-0.5 font-medium">
+                    {item.count}
+                  </p>
                 </div>
               </Link>
             ))}
@@ -249,13 +230,13 @@ export default function HomeRedesign() {
             </div>
 
             {/* Metal Filter Pills */}
-            <div className="inline-flex rounded-full bg-[#eaf1ed] p-1.5 border border-[#144a37]/15 self-start md:self-end">
+            <div className="inline-flex rounded-xl bg-[#eaf1ed] p-1 border border-[#144a37]/15 self-start md:self-end">
               {(['All', 'Gold', 'Silver'] as const).map((tab) => (
                 <button
                   key={tab}
                   type="button"
                   onClick={() => setActiveMetalTab(tab)}
-                  className={`px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${
+                  className={`px-4 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all ${
                     activeMetalTab === tab
                       ? 'bg-[#0c3325] text-white shadow-sm'
                       : 'text-[#0d211a] hover:text-[#144a37]'
@@ -296,9 +277,12 @@ export default function HomeRedesign() {
         <div className="mx-auto max-w-[1500px] grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
           <div className="space-y-6">
-            <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-[10.5px] font-semibold uppercase tracking-[0.24em] text-[#8ebfa8] border border-white/15">
-              Pure Silver Mastery
-            </span>
+            <div className="flex items-center gap-3">
+              <span className="w-6 h-px bg-[#8ebfa8]/60" />
+              <span className="text-[11px] font-medium uppercase tracking-[0.28em] text-[#8ebfa8]">
+                Pure Silver Mastery
+              </span>
+            </div>
             <h2 className="font-serif text-4xl sm:text-6xl md:text-7xl leading-[0.92] tracking-tight">
               The 925 Sterling
               <span className="block italic text-[#8ebfa8] font-normal">Silver Collection.</span>
@@ -360,9 +344,11 @@ export default function HomeRedesign() {
             
             {/* Sticky Left Anchor Panel */}
             <div className="lg:sticky lg:top-36 space-y-6">
-              <div className="inline-flex items-center gap-2 rounded-full bg-[#eaf1ed] px-4 py-1.5 text-[10.5px] font-bold uppercase tracking-[0.24em] text-[#144a37] border border-[#144a37]/15">
-                <ShieldCheck className="w-3.5 h-3.5" />
-                Real Value & Integrity
+              <div className="flex items-center gap-3">
+                <span className="w-6 h-px bg-[#144a37]" />
+                <span className="text-[11px] font-bold uppercase tracking-[0.28em] text-[#144a37]">
+                  Real Value & Integrity
+                </span>
               </div>
 
               <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d211a] leading-[0.95]">
@@ -427,9 +413,9 @@ export default function HomeRedesign() {
                     {card.body}
                   </p>
 
-                  <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-[11px] font-mono text-[#8ebfa8] border border-white/15">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#8ebfa8]" />
-                    <span>{card.badge}</span>
+                  <div className="pt-4 border-t border-white/15 flex items-center gap-2.5 text-xs font-mono text-[#8ebfa8]">
+                    <span className="w-1.5 h-1.5 bg-[#8ebfa8] rotate-45 shrink-0" />
+                    <span className="tracking-wider uppercase text-[11px]">{card.badge}</span>
                   </div>
                 </div>
               ))}
@@ -448,9 +434,12 @@ export default function HomeRedesign() {
           </div>
 
           <div className="relative z-10 max-w-2xl space-y-6">
-            <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3.5 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-[#8ebfa8]">
-              Bespoke Jewellery Service
-            </span>
+            <div className="flex items-center gap-3">
+              <span className="w-6 h-px bg-[#8ebfa8]/60" />
+              <span className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#8ebfa8]">
+                Bespoke Jewellery Service
+              </span>
+            </div>
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl leading-tight">
               Create a custom heirloom in gold, diamonds, or silver.
             </h2>

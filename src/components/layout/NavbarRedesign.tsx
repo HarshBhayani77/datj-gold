@@ -358,7 +358,7 @@ export default function NavbarRedesign() {
                         alt={activeCategoryData.label}
                         className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700"
                       />
-                      <span className="absolute top-2.5 left-2.5 text-[9px] tracking-widest uppercase font-bold text-white bg-[#062319]/90 border border-white/20 px-2 py-0.5 rounded-full backdrop-blur-sm">
+                      <span className="absolute top-2.5 left-2.5 text-[9px] tracking-widest uppercase font-bold text-white bg-[#062319]/90 border border-white/20 px-2 py-0.5 rounded-md backdrop-blur-sm">
                         BIS Hallmarked
                       </span>
                     </div>
@@ -369,7 +369,7 @@ export default function NavbarRedesign() {
                       <Link
                         to={activeCategoryData.to}
                         onClick={() => setActiveDropdown(null)}
-                        className="inline-flex text-[9.5px] font-bold uppercase tracking-widest bg-white text-[#062319] px-3 py-1.5 rounded-full hover:bg-[#eef4f1] transition-colors shadow"
+                        className="inline-flex text-[9.5px] font-bold uppercase tracking-widest bg-white text-[#062319] px-3 py-1.5 rounded-lg hover:bg-[#eef4f1] transition-colors shadow"
                       >
                         Explore Pieces →
                       </Link>

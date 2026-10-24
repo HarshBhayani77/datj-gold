@@ -226,9 +226,9 @@ export default function CategoryRedesign() {
             
             {/* Left: Clear Typography & Metallurgical Metadata */}
             <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-1 text-[10px] font-bold uppercase tracking-[0.24em] text-[#8ebfa8] backdrop-blur-sm">
-                <ShieldCheck className="h-3.5 w-3.5" />
-                {content.eyebrow}
+              <div className="flex items-center gap-2.5 text-[11px] font-medium uppercase tracking-[0.28em] text-[#8ebfa8]">
+                <span className="w-6 h-px bg-[#8ebfa8]/50" />
+                <span>{content.eyebrow}</span>
               </div>
 
               <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.02] tracking-tight">
@@ -239,14 +239,14 @@ export default function CategoryRedesign() {
                 {content.body}
               </p>
 
-              <div className="pt-2 flex flex-wrap items-center gap-3 text-xs font-mono text-[#8ebfa8]">
-                <div className="inline-flex items-center gap-2 rounded-lg bg-[#0c3325] px-3.5 py-2 border border-white/10 text-white">
-                  <ShieldCheck className="w-4 h-4 text-[#8ebfa8]" />
-                  <span>{content.metalHint}</span>
+              <div className="pt-3 border-t border-white/15 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-white/90 font-light">
+                <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 bg-[#8ebfa8] rotate-45 shrink-0" />
+                  <span className="font-mono text-[#8ebfa8]">{content.metalHint}</span>
                 </div>
-                <div className="inline-flex items-center gap-2 rounded-lg bg-[#0c3325] px-3.5 py-2 border border-white/10 text-white/90">
-                  <span className="h-2 w-2 rounded-full bg-[#8ebfa8] animate-pulse" />
-                  <span>MCX Live Rates Applied</span>
+                <span className="text-white/20 hidden sm:inline">·</span>
+                <div className="flex items-center gap-2">
+                  <span className="text-[11px] uppercase tracking-wider text-white/70">MCX Spot Benchmarked Daily</span>
                 </div>
               </div>
             </div>
@@ -259,7 +259,7 @@ export default function CategoryRedesign() {
                   alt={content.title}
                   className="h-full w-full object-cover object-center"
                 />
-                <div className="absolute bottom-3 left-3 rounded-full bg-[#062319]/90 border border-white/20 px-3 py-1 text-[10px] font-mono uppercase tracking-wider text-white backdrop-blur-sm">
+                <div className="absolute bottom-3 left-3 bg-[#062319]/90 border border-white/15 px-3 py-1 text-[10px] font-mono uppercase tracking-[0.16em] text-white rounded-md">
                   Atelier Showcase Piece
                 </div>
               </div>
@@ -295,7 +295,7 @@ export default function CategoryRedesign() {
               <button
                 type="button"
                 onClick={() => setFiltersOpen(true)}
-                className="inline-flex items-center gap-2 rounded-full border border-[#144a37]/20 bg-white px-4 py-2 text-xs font-bold uppercase tracking-wider text-[#0d211a] lg:hidden"
+                className="inline-flex items-center gap-2 rounded-xl border border-[#144a37]/20 bg-white px-4 py-2 text-xs font-bold uppercase tracking-wider text-[#0d211a] lg:hidden"
               >
                 <SlidersHorizontal className="h-3.5 w-3.5 text-[#144a37]" />
                 Filter Pieces
@@ -312,7 +312,7 @@ export default function CategoryRedesign() {
                 <select
                   value={sort}
                   onChange={(e) => setSort(e.target.value)}
-                  className="appearance-none rounded-full border border-[#144a37]/20 bg-white py-2 pl-4 pr-9 text-xs font-semibold text-[#0d211a] focus:border-[#144a37] focus:outline-none cursor-pointer"
+                  className="appearance-none rounded-xl border border-[#144a37]/20 bg-white py-2 pl-4 pr-9 text-xs font-semibold text-[#0d211a] focus:border-[#144a37] focus:outline-none cursor-pointer"
                 >
                   <option>Featured</option>
                   <option>Price: Low to High</option>
@@ -332,7 +332,7 @@ export default function CategoryRedesign() {
                 <button
                   type="button"
                   onClick={() => setMetal('All Metals')}
-                  className="inline-flex items-center gap-1.5 rounded-full bg-[#eaf1ed] px-3.5 py-1.5 text-xs text-[#0c3325] font-semibold border border-[#144a37]/15"
+                  className="inline-flex items-center gap-1.5 rounded-lg bg-[#eaf1ed] px-3 py-1 text-xs text-[#0c3325] font-semibold border border-[#144a37]/15"
                 >
                   {metal} <X className="h-3 w-3" />
                 </button>
@@ -341,7 +341,7 @@ export default function CategoryRedesign() {
                 <button
                   type="button"
                   onClick={() => setPrice('all')}
-                  className="inline-flex items-center gap-1.5 rounded-full bg-[#eaf1ed] px-3.5 py-1.5 text-xs text-[#0c3325] font-semibold border border-[#144a37]/15"
+                  className="inline-flex items-center gap-1.5 rounded-lg bg-[#eaf1ed] px-3 py-1 text-xs text-[#0c3325] font-semibold border border-[#144a37]/15"
                 >
                   {priceFilters.find((f) => f.value === price)?.label} <X className="h-3 w-3" />
                 </button>

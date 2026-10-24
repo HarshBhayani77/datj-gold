@@ -138,7 +138,7 @@ export default function ProductRedesign() {
                   key={ang.id + idx}
                   type="button"
                   onClick={() => setActiveImage(idx)}
-                  className={`shrink-0 rounded-full px-3 py-1 text-[11px] font-medium transition-all flex items-center gap-1.5 ${
+                  className={`shrink-0 rounded-lg px-3 py-1 text-[11px] font-medium transition-all flex items-center gap-1.5 ${
                     activeImage === idx
                       ? 'bg-[#0c3325] text-white shadow-sm ring-1 ring-[#0c3325]'
                       : 'bg-white text-[#3d544b] border border-[#144a37]/15 hover:bg-[#eaf1ed]'
@@ -181,14 +181,11 @@ export default function ProductRedesign() {
               )}
 
               {/* Badges */}
-              <div className="absolute left-4 top-4 flex flex-col gap-1.5">
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-[#0c3325]/90 text-white px-3 py-1 text-[10px] font-bold uppercase tracking-wider backdrop-blur-md shadow-sm">
-                  <ShieldCheck className="w-3 h-3 text-[#8ebfa8]" />
-                  {product.purity}
-                </span>
-                <span className="rounded-full bg-white/95 text-[#0c3325] px-3 py-0.5 text-[10px] font-mono font-bold tracking-wider backdrop-blur shadow-sm">
-                  {product.hallmarkHUID}
-                </span>
+              <div className="absolute left-4 top-4 flex items-center gap-2 bg-[#062319]/90 backdrop-blur-md text-white px-3 py-1.5 rounded-lg border border-white/15 shadow-md">
+                <span className="w-1.5 h-1.5 bg-[#8ebfa8] rotate-45 shrink-0" />
+                <span className="text-[10px] font-mono uppercase tracking-wider font-semibold text-[#8ebfa8]">{product.purity}</span>
+                <span className="text-white/30 text-xs">|</span>
+                <span className="text-[10px] font-mono text-white/90">{product.hallmarkHUID}</span>
               </div>
 
               {/* Wishlist Button */}
@@ -217,7 +214,7 @@ export default function ProductRedesign() {
               <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-2xl bg-[#062319]/90 backdrop-blur-md border border-white/20 px-4 py-2.5 text-white shadow-xl">
                 <div className="space-y-0.5">
                   <div className="flex items-center gap-2">
-                    <span className="h-2 w-2 rounded-full bg-[#8ebfa8] animate-pulse" />
+                    <span className="w-1.5 h-1.5 bg-[#8ebfa8] rotate-45 shrink-0" />
                     <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-[#8ebfa8]">
                       {currentAngle.name}
                     </span>
@@ -320,7 +317,7 @@ export default function ProductRedesign() {
                     {formatPrice(product.originalPrice)}
                   </span>
                 )}
-                <span className="ml-auto rounded-full bg-[#eaf1ed] px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-[#0c3325]">
+                <span className="ml-auto text-[10.5px] font-semibold uppercase tracking-[0.16em] text-[#144a37] border-b border-[#144a37]/30 pb-0.5">
                   Price Transparency Guarantee
                 </span>
               </div>
@@ -411,7 +408,7 @@ export default function ProductRedesign() {
             {/* Add to Bag and Express Purchase Actions */}
             <div className="space-y-3 pt-2">
               <div className="flex gap-3">
-                <div className="flex items-center rounded-full border border-[#144a37]/25 bg-white px-3">
+                <div className="flex items-center rounded-xl border border-[#144a37]/25 bg-white px-3">
                   <button
                     type="button"
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}

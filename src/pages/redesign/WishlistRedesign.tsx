@@ -104,7 +104,7 @@ export default function WishlistRedesign() {
                         <Trash2 className="h-4 w-4" />
                       </button>
 
-                      <span className="absolute left-3 top-3 rounded-full bg-[#0c3325]/90 text-white px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider backdrop-blur">
+                      <span className="absolute left-3 top-3 rounded-md bg-[#0c3325]/90 text-white px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider backdrop-blur">
                         BIS Hallmarked
                       </span>
                     </div>
