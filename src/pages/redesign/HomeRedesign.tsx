@@ -69,17 +69,17 @@ export default function HomeRedesign() {
       {/* Recreated Luxury Editorial Hero Section - Clean Solid Emerald Architecture */}
       <section className="relative overflow-hidden bg-[#062319] text-white pt-28 pb-16 md:pt-36 md:pb-24 border-b border-[#144a37]/30">
         <div className="relative mx-auto max-w-[1500px] px-5 md:px-10">
-          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 lg:gap-16 items-center">
             
-            {/* Left Column: Regal Copy & Actions */}
-            <div className="space-y-7">
+            {/* Left Column: Regal Copy & Actions (Below image on mobile, Left on desktop) */}
+            <div className="order-2 lg:order-1 space-y-6 lg:space-y-7">
               
               <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[10.5px] font-semibold uppercase tracking-[0.24em] text-[#8ebfa8] backdrop-blur-md">
                 <ShieldCheck className="h-3.5 w-3.5" />
                 Est. 1984 · Jaipur Gold & Silver Atelier
               </div>
 
-              <h1 className="font-serif text-[clamp(3.4rem,6.5vw,6.5rem)] leading-[0.88] tracking-[-0.03em] font-bold">
+              <h1 className="font-serif text-[clamp(2.7rem,6vw,6.5rem)] leading-[0.92] lg:leading-[0.88] tracking-[-0.03em] font-bold">
                 Purity carved in
                 <span className="block italic text-[#8ebfa8] font-normal mt-1">real gold & silver.</span>
               </h1>
@@ -128,9 +128,9 @@ export default function HomeRedesign() {
 
             </div>
 
-            {/* Right Column: Arched Fine Jewelry Display with Floating Trust Badges - Crisp Unblended Visual */}
-            <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
-              <div className="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden bg-[#0c3325] border border-white/20 shadow-2xl">
+            {/* Right Column: Arched Fine Jewelry Display (Above text on mobile with reduced height, Right on desktop) */}
+            <div className="order-1 lg:order-2 relative mx-auto w-full max-w-md lg:max-w-none">
+              <div className="relative h-[220px] sm:h-[300px] lg:h-auto lg:aspect-[4/5] rounded-2xl lg:rounded-[2.5rem] overflow-hidden bg-[#0c3325] border border-white/20 shadow-2xl">
                 <img
                   src="/images/jewelry/choker_kundan_front.jpg"
                   alt="Royal 22K Kundan Choker Necklace"
@@ -139,23 +139,23 @@ export default function HomeRedesign() {
                 />
                 
                 {/* Floating Trust Badge 1: Top Left */}
-                <div className="absolute top-5 left-5 rounded-2xl bg-[#062319]/90 border border-white/20 p-3.5 backdrop-blur-md shadow-lg text-white space-y-0.5 max-w-[210px]">
-                  <div className="flex items-center gap-1.5 text-[#8ebfa8] font-bold text-[10px] uppercase tracking-wider">
-                    <ShieldCheck className="w-3.5 h-3.5" />
+                <div className="absolute top-3 left-3 sm:top-5 sm:left-5 rounded-xl sm:rounded-2xl bg-[#062319]/90 border border-white/20 p-2 sm:p-3.5 backdrop-blur-md shadow-lg text-white space-y-0.5 max-w-[170px] sm:max-w-[210px]">
+                  <div className="flex items-center gap-1 sm:gap-1.5 text-[#8ebfa8] font-bold text-[9px] sm:text-[10px] uppercase tracking-wider">
+                    <ShieldCheck className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                     <span>BIS 916 Certified</span>
                   </div>
-                  <p className="text-[11px] font-mono text-white/90">Laser HUID Inscribed</p>
-                  <p className="text-[10px] text-white/60">Verifiable on BIS Care App</p>
+                  <p className="text-[10px] sm:text-[11px] font-mono text-white/90">Laser HUID Inscribed</p>
+                  <p className="text-[9px] sm:text-[10px] text-white/60 hidden sm:block">Verifiable on BIS Care App</p>
                 </div>
 
                 {/* Floating Trust Badge 2: Bottom Right */}
-                <div className="absolute bottom-5 right-5 rounded-2xl bg-[#062319]/90 border border-white/20 p-3.5 backdrop-blur-md shadow-lg text-white space-y-0.5 text-right max-w-[210px]">
-                  <div className="flex items-center justify-end gap-1.5 text-[#8ebfa8] font-bold text-[10px] uppercase tracking-wider">
-                    <Sparkles className="w-3.5 h-3.5" />
-                    <span>Pure Bullion Guarantee</span>
+                <div className="absolute bottom-3 right-3 sm:bottom-5 sm:right-5 rounded-xl sm:rounded-2xl bg-[#062319]/90 border border-white/20 p-2 sm:p-3.5 backdrop-blur-md shadow-lg text-white space-y-0.5 text-right max-w-[170px] sm:max-w-[210px]">
+                  <div className="flex items-center justify-end gap-1 sm:gap-1.5 text-[#8ebfa8] font-bold text-[9px] sm:text-[10px] uppercase tracking-wider">
+                    <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
+                    <span>Pure Bullion</span>
                   </div>
-                  <p className="text-[11px] font-mono text-white/90">100% Lifetime Buyback</p>
-                  <p className="text-[10px] text-white/60">At prevailing live market rates</p>
+                  <p className="text-[10px] sm:text-[11px] font-mono text-white/90">100% Lifetime Buyback</p>
+                  <p className="text-[9px] sm:text-[10px] text-white/60 hidden sm:block">At prevailing live market rates</p>
                 </div>
               </div>
             </div>
