@@ -205,7 +205,7 @@ export default function NavbarRedesign() {
                   to="/contact"
                   className={`text-[11.5px] font-semibold tracking-[0.18em] transition-colors uppercase whitespace-nowrap ${sublinkColor}`}
                 >
-                  Concierge
+                  Contact
                 </Link>
               </div>
 
