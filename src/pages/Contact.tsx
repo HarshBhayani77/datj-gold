@@ -37,7 +37,7 @@ export default function Contact() {
                                     <h4 className="font-serif text-lg text-[#333333] mb-1">Address</h4>
                                     <p className="text-[#575757] text-sm leading-relaxed">
                                         12, Gold Souk Road, <br />
-                                        Jewellery District, Jaipur, <br />
+                                        Ghod Dod Road, Surat, Gujarat, <br />
                                         Rajasthan - 302001
                                     </p>
                                 </div>
@@ -49,7 +49,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <h4 className="font-serif text-lg text-[#333333] mb-1">Phone</h4>
-                                    <p className="text-[#575757] text-sm">+91 98765 43210</p>
+                                    <p className="text-[#575757] text-sm">+91 78618 86462</p>
                                 </div>
                             </div>
                              <div className="flex gap-4">
@@ -58,7 +58,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <h4 className="font-serif text-lg text-[#333333] mb-1">Email</h4>
-                                    <p className="text-[#575757] text-sm">hello@datj.com</p>
+                                    <p className="text-[#575757] text-sm">harshbhayani77@gmail.com</p>
                                 </div>
                             </div>
                             <div className="flex gap-4">

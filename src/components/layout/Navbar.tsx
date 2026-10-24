@@ -87,9 +87,9 @@ export default function Navbar() {
         {/* Announcement Bar — always solid */}
         <div className="bg-[#C5B396] text-black text-xs py-2 px-4">
           <div className="container mx-auto flex items-center justify-between">
-            <a href="tel:+919876543210" className="flex items-center gap-1.5 font-medium hover:opacity-70 transition-opacity">
+            <a href="tel:+917861886462" className="flex items-center gap-1.5 font-medium hover:opacity-70 transition-opacity">
               <Phone className="w-3 h-3" />
-              (+91) 98765 43210
+              (+91) 78618 86462
             </a>
             <p className="hidden sm:block font-medium tracking-wide text-center">
               ✦ New Arrivals – Handcrafted Luxury Jewellery &nbsp;

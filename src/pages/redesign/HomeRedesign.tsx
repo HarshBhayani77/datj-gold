@@ -76,7 +76,7 @@ export default function HomeRedesign() {
               
               <div className="flex items-center gap-2.5 text-[11px] font-medium uppercase tracking-[0.28em] text-[#8ebfa8]">
                 <span className="w-6 h-px bg-[#8ebfa8]/50" />
-                <span>Jaipur Gold & Silver Atelier · Est. 1984</span>
+                <span>Surat Gold & Silver Atelier · Est. 1984</span>
               </div>
 
               <h1 className="font-serif text-[clamp(2.7rem,6vw,6.5rem)] leading-[0.92] lg:leading-[0.88] tracking-[-0.03em] font-bold">
@@ -451,12 +451,12 @@ export default function HomeRedesign() {
                 Book a Private Consultation
               </Link>
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/917861886462"
                 target="_blank"
                 rel="noreferrer"
                 className="lux-button-silver"
               >
-                Chat on WhatsApp (+91 98765 43210)
+                Chat on WhatsApp (+91 78618 86462)
               </a>
             </div>
           </div>

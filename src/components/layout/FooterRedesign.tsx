@@ -94,14 +94,14 @@ export default function FooterRedesign() {
                 <Instagram className="h-4 w-4" />
               </a>
               <a
-                href="mailto:concierge@datj.com"
+                href="mailto:harshbhayani77@gmail.com"
                 aria-label="Email Datj"
                 className="grid h-9 w-9 place-items-center rounded-full border border-white/20 transition hover:border-[#8ebfa8] hover:text-[#8ebfa8]"
               >
                 <Mail className="h-4 w-4" />
               </a>
               <a
-                href="tel:+919876543210"
+                href="tel:+917861886462"
                 aria-label="Phone"
                 className="grid h-9 w-9 place-items-center rounded-full border border-white/20 transition hover:border-[#8ebfa8] hover:text-[#8ebfa8]"
               >
@@ -148,21 +148,21 @@ export default function FooterRedesign() {
               Atelier Inquiries
             </h3>
             <div className="space-y-4 text-xs leading-relaxed text-white/75">
-              <a href="tel:+919876543210" className="flex items-start gap-2.5 transition hover:text-white">
+              <a href="tel:+917861886462" className="flex items-start gap-2.5 transition hover:text-white">
                 <Phone className="mt-0.5 h-4 w-4 text-[#8ebfa8] shrink-0" />
-                <span>+91 98765 43210 (Toll Free & WhatsApp)</span>
+                <span>+91 78618 86462 (Direct Desk & WhatsApp)</span>
               </a>
-              <a href="mailto:concierge@datj.com" className="flex items-start gap-2.5 transition hover:text-white">
+              <a href="mailto:harshbhayani77@gmail.com" className="flex items-start gap-2.5 transition hover:text-white">
                 <Mail className="mt-0.5 h-4 w-4 text-[#8ebfa8] shrink-0" />
-                <span>concierge@datj.com</span>
+                <span>harshbhayani77@gmail.com</span>
               </a>
               <div className="flex items-start gap-2.5">
                 <MapPin className="mt-0.5 h-4 w-4 text-[#8ebfa8] shrink-0" />
-                <span>Johari Bazaar Heritage Atelier, Pink City, Jaipur, Rajasthan 302003</span>
+                <span>Datj Heritage Atelier, Ghod Dod Road, Surat, Gujarat 395007</span>
               </div>
               <div className="flex items-start gap-2.5">
                 <MapPin className="mt-0.5 h-4 w-4 text-[#8ebfa8] shrink-0" />
-                <span>BKC Haute Joaillerie Salon, Mumbai 400051</span>
+                <span>Surat Diamond Bourse (SDB) Salon, DREAM City, Surat 395007</span>
               </div>
             </div>
           </div>

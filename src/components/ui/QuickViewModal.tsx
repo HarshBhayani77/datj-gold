@@ -147,7 +147,7 @@ export default function QuickViewModal() {
                    </button>
                    <div className={`overflow-hidden transition-all duration-300 ${activeTab === 'desc' ? 'max-h-[300px] opacity-100 pb-3' : 'max-h-0 opacity-0'}`}>
                        <p className="text-[#526a61] text-xs leading-relaxed">
-                           Handcrafted by certified Jaipur artisans using pure bullion metals. Comes stamped with govt. approved BIS hallmarking, laser HUID code, and independent gemmological certificates.
+                           Handcrafted by master artisans in Surat using pure bullion metals. Comes stamped with govt. approved BIS hallmarking, laser HUID code, and independent gemmological certificates.
                        </p>
                    </div>
                </div>

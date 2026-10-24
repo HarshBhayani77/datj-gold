@@ -12,14 +12,14 @@ export default function AboutRedesign() {
           <div className="space-y-6">
             <div className="flex items-center gap-2.5 text-[11px] font-medium uppercase tracking-[0.28em] text-[#8ebfa8]">
               <span className="w-6 h-px bg-[#8ebfa8]/50" />
-              <span>Heritage Since 1984 · Jaipur Atelier</span>
+              <span>Heritage Since 1984 · Surat Atelier</span>
             </div>
             <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold leading-[0.92]">
               Honesty in metal,
               <span className="block italic text-[#8ebfa8] font-normal">purity in every grain.</span>
             </h1>
             <p className="text-base text-white/80 leading-7 font-light max-w-xl">
-              Founded four decades ago in the historic Johari Bazaar of Jaipur, Datj was born from a singular conviction: that fine gold and silver jewellery must be grounded in mathematical purity, verifiable hallmarking, and transparent pricing.
+              Founded four decades ago in the diamond and precious metal capital of Surat, Gujarat, Datj was born from a singular conviction: that fine gold and silver jewellery must be grounded in mathematical purity, verifiable hallmarking, and transparent pricing.
             </p>
             <div className="pt-2 flex flex-wrap gap-4">
               <Link to="/collection/featured" className="lux-button bg-white text-[#062319] hover:bg-[#eef4f1] border-white">
@@ -204,10 +204,10 @@ export default function AboutRedesign() {
                 <span>Flagship Atelier</span>
               </div>
               <h3 className="font-serif text-3xl font-bold text-[#0d211a]">
-                Jaipur Heritage Salon
+                Surat Flagship Atelier
               </h3>
               <p className="text-xs text-[#526a61] leading-relaxed">
-                42, Johari Heritage Enclave, Near Badi Chaupar, Pink City, Jaipur, Rajasthan 302003
+                42, Datj Heritage Enclave, Ghod Dod Road, Surat, Gujarat 395007
               </p>
               <p className="text-xs text-[#0c3325] font-semibold">
                 Daily: 10:30 AM – 8:30 PM IST · Appointments Recommended
@@ -223,10 +223,10 @@ export default function AboutRedesign() {
                 <span>Diamond & Silver Salon</span>
               </div>
               <h3 className="font-serif text-3xl font-bold text-[#0d211a]">
-                Mumbai Haute Atelier
+                Surat Diamond Bourse Salon
               </h3>
               <p className="text-xs text-[#526a61] leading-relaxed">
-                Suite 4B, Peninsula Diamond Tower, Bandra Kurla Complex (BKC), Mumbai, Maharashtra 400051
+                Tower 4, Surat Diamond Bourse (SDB), DREAM City, Khajod, Surat, Gujarat 395007
               </p>
               <p className="text-xs text-[#0c3325] font-semibold">
                 Mon – Sat: 11:00 AM – 8:00 PM IST · By Prior Invitation

@@ -101,9 +101,9 @@ export default function NavbarRedesign() {
         <div className="bg-[#062319] text-[#eef4f1] text-[11px] py-1.5 px-4 border-b border-white/10 tracking-wider">
           <div className="mx-auto max-w-[1500px] flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <a href="tel:+919876543210" className="flex items-center gap-1.5 hover:text-white transition-colors">
+              <a href="tel:+917861886462" className="flex items-center gap-1.5 hover:text-white transition-colors">
                 <Phone className="w-3 h-3 text-[#4e8a72]" />
-                <span className="font-medium">+91 98765 43210</span>
+                <span className="font-medium">+91 78618 86462</span>
               </a>
               <span className="hidden md:inline text-white/30">|</span>
               <span className="hidden md:flex items-center gap-1 text-white/70">
@@ -128,7 +128,7 @@ export default function NavbarRedesign() {
 
             <div className="hidden md:flex items-center gap-1.5 text-white/80">
               <MapPin className="w-3 h-3 text-[#4e8a72]" />
-              <span>Jaipur Atelier & Mumbai Salon</span>
+              <span>Surat Atelier & Private Viewing</span>
             </div>
           </div>
         </div>

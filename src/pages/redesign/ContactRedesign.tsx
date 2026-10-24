@@ -4,7 +4,7 @@ import { CheckCircle2, Mail, MapPin, Phone } from 'lucide-react';
 export default function ContactRedesign() {
   const [submitted, setSubmitted] = useState(false);
   const [service, setService] = useState('Bespoke 22K Gold Bridal');
-  const [mode, setMode] = useState('Jaipur Atelier');
+  const [mode, setMode] = useState('Surat Flagship Atelier');
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [date, setDate] = useState('');
@@ -28,7 +28,7 @@ export default function ContactRedesign() {
             Atelier consultation & bespoke requests
           </h1>
           <p className="mt-4 max-w-xl text-sm leading-6 text-white/80 font-light">
-            Whether designing a one-of-a-kind 22K bridal suite, commissioning an engraved 925 silver kada, or scheduling a private viewing in Jaipur or Mumbai.
+            Whether designing a one-of-a-kind 22K bridal suite, commissioning an engraved 925 silver kada, or scheduling a private viewing at our Surat atelier.
           </p>
         </div>
       </section>
@@ -86,7 +86,7 @@ export default function ContactRedesign() {
                         type="tel"
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
-                        placeholder="+91 98765 43210"
+                        placeholder="+91 78618 86462"
                         className="form-field text-xs"
                       />
                     </div>
@@ -100,8 +100,8 @@ export default function ContactRedesign() {
                         onChange={(e) => setMode(e.target.value)}
                         className="form-field text-xs cursor-pointer font-medium"
                       >
-                        <option>Jaipur Flagship Atelier (Johari Bazaar)</option>
-                        <option>Mumbai Diamond Salon (BKC)</option>
+                        <option>Surat Flagship Atelier (Ghod Dod Road)</option>
+                        <option>Surat Diamond Bourse Salon (Khajod)</option>
                         <option>Private Video Call (Zoom / WhatsApp HD)</option>
                       </select>
                     </div>
@@ -173,8 +173,8 @@ export default function ContactRedesign() {
                   </div>
                   <div>
                     <p className="font-bold">Telephone Helpline & IVR</p>
-                    <a href="tel:+919876543210" className="text-[#144a37] hover:underline text-sm font-semibold">
-                      +91 98765 43210
+                    <a href="tel:+917861886462" className="text-[#144a37] hover:underline text-sm font-semibold">
+                      +91 78618 86462
                     </a>
                     <p className="text-[11px] text-[#526a61]">Monday to Sunday, 9:30 AM – 9:00 PM IST</p>
                   </div>
@@ -186,8 +186,8 @@ export default function ContactRedesign() {
                   </div>
                   <div>
                     <p className="font-bold">Email Concierge</p>
-                    <a href="mailto:concierge@datj.com" className="text-[#144a37] hover:underline text-sm font-semibold">
-                      concierge@datj.com
+                    <a href="mailto:harshbhayani77@gmail.com" className="text-[#144a37] hover:underline text-sm font-semibold">
+                      harshbhayani77@gmail.com
                     </a>
                     <p className="text-[11px] text-[#526a61]">Verified responses within 2 hours</p>
                   </div>
@@ -198,8 +198,8 @@ export default function ContactRedesign() {
                     <MapPin className="w-4 h-4" />
                   </div>
                   <div>
-                    <p className="font-bold">Jaipur Flagship Salon</p>
-                    <p className="text-[#526a61]">Johari Bazaar, Pink City, Jaipur, Rajasthan 302003</p>
+                    <p className="font-bold">Surat Flagship Atelier</p>
+                    <p className="text-[#526a61]">Ghod Dod Road, Surat, Gujarat 395007</p>
                   </div>
                 </div>
 
@@ -208,8 +208,8 @@ export default function ContactRedesign() {
                     <MapPin className="w-4 h-4" />
                   </div>
                   <div>
-                    <p className="font-bold">Mumbai Diamond Atelier</p>
-                    <p className="text-[#526a61]">BKC Financial District, Mumbai, Maharashtra 400051</p>
+                    <p className="font-bold">Surat Diamond Bourse Salon</p>
+                    <p className="text-[#526a61]">DREAM City, Khajod, Surat, Gujarat 395007</p>
                   </div>
                 </div>
               </div>
@@ -227,12 +227,12 @@ export default function ContactRedesign() {
                 Inspect hallmark codes, live jewellery pieces on video call, or discuss bullion rates directly with a senior advisor.
               </p>
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/917861886462"
                 target="_blank"
                 rel="noreferrer"
                 className="lux-button bg-white text-[#062319] hover:bg-[#eef4f1] border-white text-xs mt-2"
               >
-                Open WhatsApp (+91 98765 43210)
+                Open WhatsApp (+91 78618 86462)
               </a>
             </div>
 

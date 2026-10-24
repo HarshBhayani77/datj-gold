@@ -297,7 +297,7 @@ export default function CartRedesign() {
                   <div className="grid grid-cols-2 gap-3">
                     <div>
                       <label className="font-bold text-[#0d211a] block mb-1">Phone (For Courier OTP)</label>
-                      <input required type="tel" placeholder="+91 98765 43210" className="form-field text-xs" />
+                      <input required type="tel" placeholder="+91 78618 86462" className="form-field text-xs" />
                     </div>
                     <div>
                       <label className="font-bold text-[#0d211a] block mb-1">Delivery Pincode</label>
@@ -338,7 +338,7 @@ export default function CartRedesign() {
                   Precious Order Confirmed!
                 </h3>
                 <p className="text-xs text-[#526a61] leading-relaxed max-w-sm mx-auto">
-                  Your certified order <strong>#RUP-{orderId}</strong> has been registered with our Jaipur vault. Your BIS Hallmark laser certificate and tracking link will be sent via SMS.
+                  Your certified order <strong>#RUP-{orderId}</strong> has been registered with our Surat vault. Your BIS Hallmark laser certificate and tracking link will be sent via SMS.
                 </p>
                 <div className="pt-4">
                   <button
