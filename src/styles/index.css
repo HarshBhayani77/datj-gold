@@ -1,0 +1,187 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant", "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --color-emerald-deep: #062319;
+  --color-emerald-dark: #0c3325;
+  --color-emerald-primary: #144a37;
+  --color-emerald-accent: #246d53;
+  --color-sage-soft: #4e8a72;
+  --color-silver-light: #eef4f1;
+  --color-silver-mid: #9cb7ab;
+  --color-silver-border: rgba(20, 74, 55, 0.12);
+  --color-pearl-bg: #f6f9f7;
+  --color-ink: #0d211a;
+  --color-muted: #526a61;
+
+  --animate-fade-in-up: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f6f9f7;
+  color: #0d211a;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+  outline-offset: 4px;
+}
+
+img {
+  display: block;
+}
+
+::selection {
+  background: rgba(20, 74, 55, 0.22);
+  color: #062319;
+}
+
+@keyframes shimmer {
+  100% { transform: translateX(200%); }
+}
+
+.scrollbar-hide,
+.product-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar,
+.product-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.eyebrow {
+  margin-bottom: 0.65rem;
+  color: #144a37;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.display-title {
+  max-width: 900px;
+  color: #0d211a;
+  font-family: "Cormorant", "Playfair Display", Georgia, serif;
+  font-size: clamp(2.5rem, 5.5vw, 4.75rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+
+.lux-button,
+.lux-button-light,
+.lux-button-silver {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 0.95rem 1.75rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  text-transform: uppercase;
+  transition: all 220ms ease;
+  cursor: pointer;
+}
+
+.lux-button {
+  border: 1px solid #0c3325;
+  background: #0c3325;
+  color: #ffffff;
+}
+
+.lux-button:hover {
+  background: #144a37;
+  border-color: #144a37;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px -6px rgba(12, 51, 37, 0.35);
+}
+
+.lux-button-light {
+  border: 1px solid rgba(12, 51, 37, 0.22);
+  background: transparent;
+  color: #0c3325;
+}
+
+.lux-button-light:hover {
+  border-color: #0c3325;
+  background: #0c3325;
+  color: #ffffff;
+}
+
+.lux-button-silver {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  backdrop-filter: blur(8px);
+}
+
+.lux-button-silver:hover {
+  background: #ffffff;
+  color: #062319;
+  border-color: #ffffff;
+}
+
+.form-field {
+  width: 100%;
+  border: 1px solid rgba(12, 51, 37, 0.16);
+  border-radius: 0.75rem;
+  background: #ffffff;
+  padding: 0.875rem 1.15rem;
+  color: #0d211a;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.form-field:focus {
+  border-color: #144a37;
+  box-shadow: 0 0 0 3px rgba(20, 74, 55, 0.12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
